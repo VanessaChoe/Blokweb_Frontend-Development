@@ -3,3 +3,27 @@
   box-sizing:border-box;  
 }
 
+body{
+  background-color: black;
+}
+
+body header nav a img{
+  width: 6em;
+  margin-left: 39%
+}
+
+video {
+  display: flex;
+  position: absolute;
+  width: 22em;
+  height: 22em;
+  margin-top: 18%;
+  margin: 5.5%;
+} 
+
+main img {
+  position: absolute;
+  width: 96.5%;
+  margin-top: 35%;
+}
+
