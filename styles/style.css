@@ -1,29 +1,226 @@
-/* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
 body{
   background-color: black;
+  margin: 0;
 }
 
-body header nav a img{
-  width: 6em;
-  margin-left: 39%
-}
-
-video {
+.indexBody header nav ul a img{
   display: flex;
-  position: absolute;
+  position: sticky; 
+  width: 6em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.indexBody main section video {
+  display: flex;
+  position: relative;
   width: 22em;
-  height: 22em;
-  margin-top: 18%;
-  margin: 5.5%;
+  height: 24em;
+  margin-left: 2.75em;
+  margin-top: 2em;
+  margin-bottom: auto;
 } 
 
-main img {
-  position: absolute;
-  width: 96.5%;
-  margin-top: 35%;
-}
+.indexBody main section img {
+  display: flex;
+  position: relative;
+  width: 27.5em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -15.4em;
+  margin-bottom: auto;
+} 
 
+
+
+
+/* musicpage */
+
+  .musicPageBody header nav ul a img{
+  display: flex;
+  position: sticky; 
+  width: 6em;
+  margin-left: 7.5em;
+  }
+
+  .musicPageBody main h1{
+    display: flex;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Eurostile Extended';
+    margin-left: 3.2em;
+    margin-top: -0.4em;
+    margin-right: 1em;
+  }
+
+  /* A (play-links) */
+  /* .musicPageBody main section article:first-of-type figure:first-of-type a{
+    color: #991919;
+    font-family: 'Eurostile Extended';
+    margin-top: 0.625em;
+    text-decoration: underline;
+    margin-right: 1em;
+    
+  }
+  .musicPageBody main section article:first-of-type figure:nth-child(2) a{
+    color: #991919;
+    font-family: 'Eurostile Extended';
+    margin-top: 0.625em;
+    text-decoration: underline;
+  }
+  .musicPageBody main section article:nth-child(2) figure:nth-child(1) a{
+    color: #991919;
+    font-family: 'Eurostile Extended';
+    margin-top: 0.625em;
+    text-decoration: underline;
+  }
+  .musicPageBody main section article:nth-child(2) figure:nth-child(2) a{
+    color: #991919;
+    font-family: 'Eurostile Extended';
+    margin-top: 0.625em;
+    text-decoration: underline;
+  } */
+  /* A (play-links) */
+
+  /* figcaptions */
+  .musicPageBody main section article:first-of-type figure:first-of-type figcaption{
+    color: white;
+    font-family: 'Eurostile Extended';
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-left: 1.2em;
+    margin-bottom: 0.625em;
+  }
+  .musicPageBody main section article:first-of-type figure:nth-child(2) figcaption{
+    color: white;
+    font-family: 'Eurostile Extended';
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-left: 1.2em;
+    margin-bottom: 0.625em;
+  }
+  .musicPageBody main section article:nth-child(2) figure:nth-child(1) figcaption{
+    color: white;
+    font-family: 'Eurostile Extended';
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-left: 1.2em;
+    margin-bottom: 0.625em;
+  }
+  .musicPageBody main section article:nth-child(2) figure:nth-child(2) figcaption{
+    color: white;
+    font-family: 'Eurostile Extended';
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-left: -1.4em;
+    margin-top: 10.2em;
+    margin-bottom: 0.625em;
+  }
+  /* figcaptions */
+
+  /* twee rijen */
+  .musicPageBody main section article:first-of-type{
+    display:flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    margin-left: -0.3em;
+  }
+
+  .musicPageBody main section article:nth-child(2){
+    display:flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    margin-left: -0.3em;
+  }
+  /* twee rijen */
+
+  /* Afbeeldingen 1&2*/
+    .musicPageBody main section article:first-of-type figure:nth-child(2){
+      margin-left: -1em;
+      color: white;
+      font-family: 'Eurostile Extended';
+    }
+
+    /* https://lilkleine.nl/wp-content/uploads/2021/05/unnamed-1.png */
+    .musicPageBody main section article figure:first-of-type a img{
+      width: 10em;;
+      height: 10em;
+      border: 0.2em solid #991919; 
+    } 
+    /* https://lilkleine.nl/wp-content/uploads/2021/05/unnamed.png */
+    .musicPageBody main section article figure:nth-child(2) a img{
+      width: 10em;
+      height: 10em;
+      border: 0.2em solid #991919;
+    } 
+
+    .musicPageBody main section article:first-of-type section{
+      margin-top: 13.5em;
+      margin-left: -29.5em;
+    }
+    .musicPageBody main section article:first-of-type section a {
+      color: #991919;
+      margin-top: 10em;
+      font-size: 0.875em;
+      text-decoration: underline;
+      font-family: 'Eurostile Extended';
+    } 
+    .musicPageBody main section article:first-of-type section a:nth-child(2) {
+      color: #991919;
+      margin-top: 10em;
+      font-size: 0.875em;
+      text-decoration: underline;
+      font-family: 'Eurostile Extended';
+      margin-left: 9.5em;
+    } 
+    /* Afbeeldingen 1&2*/
+
+
+    /*  Afbeeldingen 3&4 */
+
+    /* https://lilkleine.nl/wp-content/uploads/2021/05/unnamed-5.jpeg */
+    .musicPageBody main section article:nth-child(2) figure:first-of-type{
+      margin-bottom: 3.5em;
+    }
+    .musicPageBody main section article:nth-child(2) figure:first-of-type{
+      margin-bottom: 7em;
+    }
+    .musicPageBody main section article:nth-child(2) figure:first-of-type a img{
+      width: 10em;
+      height: 10em;
+      border: 0.2em solid #991919;
+    } 
+    /* https://lilkleine.nl/wp-content/uploads/2020/04/unnamed-2.png  */
+    .musicPageBody main section article:nth-child(2) figure:nth-child(2) a img{
+      position: absolute;
+      margin-left: -3.4em;
+      width: 10em;
+      height: 10em;
+      border: 0.2em solid #991919;
+    }
+    
+    .musicPageBody main section section{
+      margin-top: -10.5em;
+      margin-left: 4.6em;
+    }
+    .musicPageBody main section section a{
+      color: #991919; 
+      font-family: 'Eurostile Extended';
+      font-size: 0.875em;
+    }
+    .musicPageBody main section section a:nth-child(2){
+      color: #991919; 
+      font-family: 'Eurostile Extended';
+      margin-left: 10em;
+      font-size: 0.875em;
+    }
+  /* Afbeeldingen 3&4 */
+  
+
+  
