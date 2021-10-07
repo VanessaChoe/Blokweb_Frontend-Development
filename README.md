@@ -1,14 +1,6 @@
 # Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
+ 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
 
 ## Jij
 
@@ -61,13 +53,13 @@ Music pagina Lilkleine.nl
 ## Breakdownschets (week 1)
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
+<summary> Uitwerken na afloop 2e werkgroep</summary>
 
-<img src="images/Homepage.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/HomepageN.jpg" width="375px" alt="breakdown van de hele pagina">
 
-<img src="images/Header.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/HeaderN.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-<img src="images/Musicpage.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/MusicpageN.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -81,26 +73,15 @@ Music pagina Lilkleine.nl
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben nog niet zo ver. Ik heb alleen nog een video op de achtergrond. Met de logo van Lil Kleine. En verder wist ik ook niet hoe ik de video's op de achtergrond automatisch en gemute in mijn website moest zetten. 
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+Hebben we nooit gedaan
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Studentassistent: 'Ga aan de slag.'
+- Studentassistent: 'Kijk bij inspecteren wat er bij de video staat en neem dat over.'
 
 </details>
 
@@ -114,26 +95,14 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Nog steeds hetzelfde als week 2. Ik heb alleen nog een video op de achtergrond. Met de logo van Lil Kleine.
 
 ### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+hebben we nooit gedaan
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Robert: kijk goed naar de max-width vh's en vw's. Positioneren gaat niet helemaal goed (moet responsive zijn op mobielformaat). Structuur van je html klopt niet helemaal.
 
 </details>
 
@@ -146,34 +115,19 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <details>
 <summary>uitwerken na test in 8e voortgang</summary>
 
-### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+### 1. Contrast
+Ik gebruik de kleur rood. De eerste kleur rood die ik gebruikte had een te laag contrast.
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### 2. Gele bril 
+Ik had deze bril opgezet en alles was prima. De kleuren werden natuurlijk wat 'geliger' maar dit was geen last.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### 3. Bril met vlekken 
+Door de vlekken kon je af en toe moelijk de kleine zwarte woorden zien, maar dit lukte opzich nog wel goed genoeg. 
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### 4. Navigeren met de tab-toets. 
+Navigeren met de tab-toets was helemaal goed gegaan. De tab-toets kon alle 'linkjes' bereiken en vervolgens activeren.
 
 </details>
-
 
 
 
@@ -184,26 +138,15 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Ik had de opdracht niet zo goed gelezen en dacht dat het of responsive of surface (dus dan helemaal niet responsive, maar moest dus wel op mobielformaat) zou zijn. Dus ik had al wat gepositioneerd met em's en moest dus helemaal opnieuw beginnen. Omdat ik hiervoor alleen maar met em's had gewerkt en helemaal niet met % en vw's en vh's en max/min-width, vond ik het best lastig om te gaan positioneren.
 
 ### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+hebben we nooit gedaan       
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Studentassistent: 'Ga je code goed ordenen, Onnodige code weghalen, dat geeft je meer overzicht om opnieuw aan de slag te gaan.'
+- Studentassistent: 'Ga zo snel mogelijk aan de slag.'
 
 </details>
 
@@ -217,27 +160,43 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Ging goed:
+
+1. Ik heb een soort van de elementen kunnen positioneren zoals ik wilde, maar het klopt nog steeds niet helemaal.
+2. Uiteindelijk met grids werken.
+3. Video's op de juiste plek in mijn website kunnen zetten.
+
+Ging slecht: 
+
+1. Positioneren
+2. Responsive gedeelte (vooral bij de Iphone X)
+3. Microinteractie met JavaScript
+4. Animeren met JavaScript
+5. De video responsive over de achtegrond instellen
+6. Ik kwam er ook een beetje laat achter dat je met full screen moest werken bij inspecteren om je schermen per formaat goed te kunnen zien/ elementen positioneren, waardoor ik dacht dat het wel was gelukt bij het responsive scherm bij iphone X, maar dat is dus niet gelukt.
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="images/Schermafbeelding 2021-10-07 om 02.32.41" width="375px" alt="Homepage">
+
+<img src="images/Schermafbeelding 2021-10-07 om 02.32.51" width="375px" alt="Nav Hamburgermenu">
+
+<img src="127.0.0.1_5500_Music&Videos.html(iPhone X).png" width="375px" alt="MUSIC&VIDEOS">
+
+<img src="Schermafbeelding 2021-10-07 om 02.33.01" width="375px" alt="Formulier">
 
 </details>
-
-
 
 
 
 ## Bronnenlijst
 
 <details open>
-<summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
-3. ...
+1. https://codepen.io/shooft/pen/dyRVVRr 
+2. https://codepen.io/chouaibblgn45/pen/LjYvpP 
+3. https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2 
+4. https://www.google.com/search?q=menu+icon+white&sxsrf=AOaemvIOfsUTkNfsJPJjyGSMFWFVstVi4w:1633606281347&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj5sOjQmbjzAhVPCuwKHR3eDzUQ_AUoAXoECAEQAw&biw=500&bih=711&dpr=2#imgrc=TaxjEJgSUEXn6M
 
 </details>

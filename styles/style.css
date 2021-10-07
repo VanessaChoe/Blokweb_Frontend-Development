@@ -2,264 +2,718 @@
   box-sizing:border-box;  
 }
 
+:root {
+  --background-color:#000000;
+  --h1-color: #FFFFFF;
+  --h2-color:#FFFFFF;
+  --border-color: #EB3223;
+  --p-hover-color: #FFFFFF;
+  --p-color: #EB3223;
+}
+
 body{
-  background-color: black;
+  margin-bottom: 0;
   margin: 0;
-}
-
-.indexBody header nav{
-  margin:0;
   padding: 0;
-}
-.indexBody header nav a img{
-  display: flex;
-  position: sticky; 
-  width: 6em;
-  margin-top: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
+  background-size: 100vh;
+  width: 100%;
 }
 
-.indexBody main section video {
+/* index.html /////////////////////////////////////////////////////////*/
+
+  .indexBody{
+    margin-left: 0;
+    padding:0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .indexBody main section:first-of-type h1{
+    visibility: hidden;
+  }
+  .indexBody main section:nth-of-type(2) h2{
+    visibility: hidden;
+  }
+
+  /* index nav ///////////////////////////////////////////////////////////*/
+  /* https://codepen.io/shooft/pen/dyRVVRr */
+
+  .indexBody header {
+    margin-left: 45%;
+    margin-right: 50%;
+    display:grid;
+    grid-template-columns:min-content 1fr min-content;  
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index: 1;
+  }
+
+  .indexBody header nav ul li a {
+    color:black;
+    text-decoration:none;
+    font-family: 'Eurostile Extended';
+    font-size: 1.22em;
+    line-height: 2em;
+  }
+
+  .indexBody header nav ul li a:hover {
+    color: red;
+    -webkit-text-stroke: 0.04em black;
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+  }
+
+  .indexBody header > a:first-of-type {
+    display:grid;
+    grid-template-columns:min-content min-content;
+    grid-gap:.25em;
+    align-items:center;
+  }
+
+  .indexBody header > a:last-of-type {
+    width:5em;
+    height:2.5em;
+    border-radius:.25em;
+    line-height:2.5em;
+    text-align:center;
+  }
+
+  .indexBody header > a:last-of-type::before{
+    content:"\2605"; /* sterretje */
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:1em;
+    height:1em;
+    transform:scale(.75);
+  }
+
+  .indexBody header nav img {
+    display: flex;
+    position: sticky;
+    width: 5.9em;
+    margin-top: 0.5em;
+    margin-left: -33%;
+    justify-content: center;
+  }
+
+  .indexBody header nav img::before {
+    display:inline-flex;
+    background-size: 1em;
+    justify-content:center;
+    align-items:center;
+    width:1em;
+    height:1em;
+    transform:scale(.75);
+  }
+
+  .indexBody header nav ul { 
+    margin:0; 
+    padding:4em 0 0;
+    background: overlay;
+    background: cover;
+    background-color: red;
+    list-style:none;
+    position:fixed;
+    left:0; right:0; top:0; bottom:0;
+    transform:translatey(-100%);
+    transition:.5s;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .indexBody header nav.toonMenu ul {
+    transform:translatex(0);
+  }
+
+  .indexBody header nav ul li {
+    margin:0; 
+    padding:0;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: -1em;
+  }
+
+  .indexBody header nav ul li a {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+/* index nav ////////////////////////////////////////////////////////////////*/
+
+.indexBody main section:first-of-type{ 
+  position: fixed;
+  width: 110%;
+  top: -5%;
+  left: -5%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+  position: fixed;
+}
+
+.indexBody main section:nth-child(1) video{ /* Achtergrondvideo ////////////*/
+  height: 110vh;
+  width: 110vw;
+}
+
+.indexBody main section:nth-of-type(2) video { /* Video in het midden //////*/
   display: flex;
-  position: relative;
-  width: 82.5%;
-  max-width: 30em;
-  margin: auto;
-  margin-top: 8%;
+  width: 100%;
+  max-width: 80%;
+  transform: translate(12%, 50%);
+  z-index: -1;
 } 
 
-.indexBody main section img {
+.indexBody main section:nth-child(2) img { /* LILKLEINE LOGO //////////////*/
   display: flex;
   position: absolute;
   width: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -95%)
+  transform: translate(-50%, -50%)
 } 
 
+  /* indexBody h1 and h2 /////////////////////////////////////////////////*/
 
-
-
-/* musicpage */
-
-  .musicPageBody header nav{
-    margin:0;
-    padding: 0;
+  .indexBody main article{
+    margin-top: -88.7%;
+    margin-left: 9.5vw;
   }
 
-  .musicPageBody header nav a img{
-    display: flex;
-    position: sticky; 
-    width: 6em;
-    margin-top: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .musicPageBody main h1{
-    display: flex;
-    color: white;
-    font-size: 2.5em;
+  .indexBody main article h2{ /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2  */
+    position: relative;
+    margin-top: 59%;
+    color: var(--h2-color);
     font-family: 'Eurostile Extended';
-    margin-left: 3.2em;
-    margin-top: -0.4em;
-    margin-right: 1em;
-  }
+    font-size: 5.4vw;
 
-  /* A (play-links) */
-  /* .musicPageBody main section article:first-of-type figure:first-of-type a{
-    color: #991919;
-    font-family: 'Eurostile Extended';
-    margin-top: 0.625em;
-    text-decoration: underline;
-    margin-right: 1em;
+    -webkit-animation: colorchange 20s infinite alternate;
+  }
+  @-webkit-keyframes colorchange {
+    0% {
+      color: #3655F5;
+    }
+    10% { 
+      color: #FFF555;
+    }
+    20% { 
+      color: red;
+    }
+    30% { 
+      color: #D37734;
+    }
+    40% { 
+      color: #7BEE57;
+    }
+    50% { 
+      color:  #3655F5;
+    }
+    60% { 
+      color: red;
+    }
+    70% { 
+      color: #D37734;
+    }
+    80% {
+      color: #7BEE57;
+    }
+    90% {
+      color: #3655F5;
+    }
+    100% { 
+      color: red;
+    }
+  }
     
-  }
-  .musicPageBody main section article:first-of-type figure:nth-child(2) a{
-    color: #991919;
+  .indexBody main h3{ /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2  */
+    position: relative;
+    margin-top: 64%;
     font-family: 'Eurostile Extended';
-    margin-top: 0.625em;
-    text-decoration: underline;
+    font-size: 5.4vw;
+
+    -webkit-animation: colorchange 20s infinite alternate;
   }
-  .musicPageBody main section article:nth-child(2) figure:nth-child(1) a{
-    color: #991919;
+  @-webkit-keyframes colorchange {
+    0% {
+      color: #3655F5;
+    }
+    10% { 
+      color: #FFF555;
+    }
+    20% { 
+      color: red;
+    }
+    30% { 
+      color: #D37734;
+    }
+    40% { 
+      color: #7BEE57;
+    }
+    50% { 
+      color:  #3655F5;
+    }
+    60% { 
+      color: red;
+    }
+    70% { 
+      color: #D37734;
+    }
+    80% {
+      color: #7BEE57;
+    }
+    90% {
+      color: #3655F5;
+    }
+    100% { 
+      color: red;
+    }
+  }
+  /* indexBody h2 and h3 ///////////////////////////////////////*/
+
+/* index.html /////////////////////////////////////////////////////////*/
+
+/* MusicVideoPageBody ////////////////////////////////////////////////*/
+
+  /* MusicVideoPageBody nav ///////////////////////////////////////*/
+  /* https://codepen.io/shooft/pen/dyRVVRr */
+
+  .MusicVideoPageBody header {
+    margin-left: 45%;
+    margin-right: 50%;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;  
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .MusicVideoPageBody header nav ul li a {
+    color: black;
+    text-decoration: none;
     font-family: 'Eurostile Extended';
-    margin-top: 0.625em;
-    text-decoration: underline;
-  }
-  .musicPageBody main section article:nth-child(2) figure:nth-child(2) a{
-    color: #991919;
-    font-family: 'Eurostile Extended';
-    margin-top: 0.625em;
-    text-decoration: underline;
-  } */
-  /* A (play-links) */
-
-  /* figcaptions */
-  .musicPageBody main section article:first-of-type figure:first-of-type figcaption{
-    color: white;
-    font-family: 'Eurostile Extended';
-    font-size: 1em;
-    line-height: 1.6em;
-    margin-left: 1.2em;
-    margin-bottom: 0.625em;
-  }
-  .musicPageBody main section article:first-of-type figure:nth-child(2) figcaption{
-    color: white;
-    font-family: 'Eurostile Extended';
-    font-size: 1em;
-    line-height: 1.6em;
-    margin-left: 1.2em;
-    margin-bottom: 0.625em;
-  }
-  .musicPageBody main section article:nth-child(2) figure:nth-child(1) figcaption{
-    color: white;
-    font-family: 'Eurostile Extended';
-    font-size: 1em;
-    line-height: 1.6em;
-    margin-left: 1.2em;
-    margin-bottom: 0.625em;
-  }
-  .musicPageBody main section article:nth-child(2) figure:nth-child(2) figcaption{
-    color: white;
-    font-family: 'Eurostile Extended';
-    font-size: 1em;
-    line-height: 1.6em;
-    margin-left: -1.4em;
-    margin-bottom: 0.625em;
-  }
-  /* figcaptions */
-
-  /* twee rijen */
-  .musicPageBody main section article:first-of-type{
-    display:flex;
-    flex-direction: row;
-    margin-top: 1em;
-    margin-bottom: 5em;
-    margin-left: -0.3em;
+    font-size: 1.22em;
+    line-height: 2em;
   }
 
-  .musicPageBody main section article:nth-child(2){
-    display:flex;
-    flex-direction: row;
-    margin-top: 1em;
-    margin-bottom: 5em;
-    margin-left: -0.3em;
+  .MusicVideoPageBody header nav ul li a:hover {
+    color: red;
+    -webkit-text-stroke: 0.04em black;
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
   }
-  /* twee rijen */
 
-  /* Afbeeldingen 1&2*/
-    .musicPageBody main section article:first-of-type figure:nth-child(2){
-      margin-left: -1em;
-      color: white;
-      font-family: 'Eurostile Extended';
-    }
-
-    /* https://lilkleine.nl/wp-content/uploads/2021/05/unnamed-1.png */
-    .musicPageBody main section article figure:first-of-type a img{
-      width: 10em;;
-      height: 10em;
-      border: 0.2em solid #991919; 
-    } 
-    /* https://lilkleine.nl/wp-content/uploads/2021/05/unnamed.png */
-    .musicPageBody main section article figure:nth-child(2) a img{
-      width: 10em;
-      height: 10em;
-      border: 0.2em solid #991919;
-    } 
-
-    .musicPageBody main section article:first-of-type section{
-      margin-top: 13.5em;
-      margin-left: -29.5em;
-    }
-    .musicPageBody main section article:first-of-type section a {
-      color: #991919;
-      margin-top: 10em;
-      font-size: 0.875em;
-      text-decoration: underline;
-      font-family: 'Eurostile Extended';
-    } 
-    .musicPageBody main section article:first-of-type section a:nth-child(2) {
-      color: #991919;
-      margin-top: 10em;
-      font-size: 0.875em;
-      text-decoration: underline;
-      font-family: 'Eurostile Extended';
-      margin-left: 9.5em;
-    } 
-    /* Afbeeldingen 1&2*/
-
-
-    /*  Afbeeldingen 3&4 */
-
-    /* https://lilkleine.nl/wp-content/uploads/2021/05/unnamed-5.jpeg */
-    .musicPageBody main section article:nth-child(2) figure:first-of-type{
-      margin-bottom: 3.5em;
-    }
-    .musicPageBody main section article:nth-child(2) figure:first-of-type{
-      margin-bottom: 7em;
-    }
-    .musicPageBody main section article:nth-child(2) figure:first-of-type a img{
-      width: 10em;
-      height: 10em;
-      border: 0.2em solid #991919;
-    } 
-    /* https://lilkleine.nl/wp-content/uploads/2020/04/unnamed-2.png  */
-    .musicPageBody main section article:nth-child(2) figure:nth-child(2) a img{
-      margin-left: -3.4em;
-      width: 10em;
-      height: 10em;
-      border: 0.2em solid #991919;
-    }
-    
-    .musicPageBody main section section{
-      margin-top: -10.5em;
-      margin-left: 4.6em;
-    }
-    .musicPageBody main section section a{
-      color: #991919; 
-      font-family: 'Eurostile Extended';
-      font-size: 0.875em;
-    }
-    .musicPageBody main section section a:nth-child(2){
-      color: #991919; 
-      font-family: 'Eurostile Extended';
-      margin-left: 10em;
-      font-size: 0.875em;
-    }
-  /* Afbeeldingen 3&4 */
-  
-  
-
-  .musicPageBody1 header nav{
-    margin:0;
-    padding: 0;
+  .MusicVideoPageBody header > a:first-of-type {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-gap: .25em;
+    align-items:  center;
   }
-  .musicPageBody1 header nav a img{
+
+  .MusicVideoPageBody header > a:last-of-type {
+    width: 5em;
+    height: 2.5em;
+    border-radius: 0.25em;
+    line-height: 2.5em;
+    text-align: center;
+  }
+
+  .MusicVideoPageBody header > a:last-of-type::before{
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    transform: scale(.75);
+  }
+
+  .MusicVideoPageBody header nav img {
     display: flex;
-    position: sticky; 
-    width: 6em;
+    position: sticky;
+    width: 5.9em;
     margin-top: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .musicPageBody1 main h1{
-    display: flex;
-    color: white;
-    font-family: Eurostile Extended; 
+    margin-left: -33%;
     justify-content: center;
   }
 
-  .musicPageBody1 main .albumWrapper{
-    display: grid;
-    grid-template-columns:10em 10em;
-    grid-template-columns:repeat(auto-fit, minmax(10em, 1fr));
+  .MusicVideoPageBody header nav img::before {
+    display: inline-flex;
+    background-size: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    transform: scale(.75);
   }
 
-  .musicPageBody1 main section a img{
-    height: 10em;
+  .MusicVideoPageBody header nav ul { 
+    margin: 0; 
+    padding: 4em 0 0;
+    background: overlay;
+    background: cover;
+    background-color: red;
+    list-style: none;
+    position: fixed;
+    left:0; right:0; top:0; bottom:0;
+    transform: translatey(-100%);
+    transition:.5s;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
   }
+
+  .MusicVideoPageBody header nav.toonMenu ul {
+    transform: translatex(0);
+  }
+
+  .MusicVideoPageBody header nav ul li {
+    margin: 0; 
+    padding: 0;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: -1em;
+  }
+
+  .MusicVideoPageBody header nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* MusicVideoPageBody nav ///////////////////////////////////////*/
+
+  /* Section 1 Albums ///////////////////////////////////////*/
+
+  .MusicVideoPageBody main h1{
+    display: flex;
+    color: var(--h1-color);
+    font-family: 'Eurostile Extended'; 
+    justify-content: center;
+  }
+
+  .MusicVideoPageBody main section{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-row-gap: 1.5em;
+    grid-template-columns:10em 10em;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  }
+
+  .MusicVideoPageBody main section:first-of-type h2{
+    visibility: hidden;
+    display: none;
+  }
+
+  .MusicVideoPageBody main section:first-of-type a {
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
+    text-decoration: none;
+  } 
+  .MusicVideoPageBody main section:first-of-type a img{
+    width: 16em;
+    border: solid 0.15em var(--border-color);
+    max-width: 100%;
+  }
+  .MusicVideoPageBody main section:first-of-type a img:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody main section:first-of-type a article h2{
+    text-transform: uppercase;
+    color: var(--h2-color);
+    font-size: 1em;
+    line-height: 26px;
+    font-family: 'Eurostile Extended'; 
+    pointer-events: none;
+  }
+
+  .MusicVideoPageBody main section:first-of-type a article p{
+    color: var(--p-color);
+    display: block;
+    font-family: 'Eurostile Extended';
+    font-size: 0.875em;
+    text-decoration: underline;
+  }
+  .MusicVideoPageBody main section:first-of-type a article p:hover{
+    color: var(--p-hover-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+  
+  /* Section 1 Albums ///////////////////////////////////////*/
+
+  /* Section 2 Video's ///////////////////////////////////////*/
+
+  .MusicVideoPageBody h3{
+    display: flex;
+    color: var(--h2-color);
+    font-family: 'Eurostile Extended';
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+
+  .MusicVideoPageBody main section a{
+    text-decoration: none;
+  }
+
+  .MusicVideoPageBody main section:nth-of-type(2){
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-row-gap: 1.5em;
+    grid-template-columns:10em;
+    grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  }
+
+  .MusicVideoPageBody main section:nth-of-type(2) h2{
+    visibility: hidden;
+    display: none;
+  }
+
+  .MusicVideoPageBody main section:nth-of-type(2) a{
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+  .MusicVideoPageBody main section:nth-of-type(2) a:first-of-type video{
+    width: 18em;
+    border: solid 0.15em var(--border-color);
+    padding: 0.25em;
+    height: 12.7em;
+    margin-bottom: -7.3em;
+  }
+
+  .MusicVideoPageBody main section:nth-of-type(2) a:first-of-type article h3{
+    visibility: hidden;
+  }
+
+  .MusicVideoPageBody main section:nth-of-type(2) a:nth-of-type(2) article h3{
+    visibility: hidden;
+    display: none;
+  }
+
+  .MusicVideoPageBody main section:nth-of-type(2) a:nth-of-type(2) video{
+    width: 18em;
+    border: solid 0.15em var(--border-color);
+    padding: 0.25em;
+  }
+  .MusicVideoPageBody main section:nth-of-type(2) a video:hover{
+    opacity: 0.6;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody main section:nth-of-type(2) article p{
+    color: var(--h2-color);
+    font-family: 'Eurostile Extended';
+  }
+
+  @media (min-width: 424px) {
+    .MusicVideoPageBody main section:nth-of-type(2){
+      display: grid;
+      text-align: center;
+      justify-content: center;
+      grid-row-gap: 1.5em;
+      grid-column-gap: 7em;
+      grid-template-columns:10em 10em;
+      grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    }
+  } 
+  
+  /* Section 2 Video's ///////////////////////////////////////*/
+
+/* MusicVideoPageBody ////////////////////////////////////////////////*/
+
+/* ContactPageBody ////////////////////////////////////////////////*/
+
+  /* ContactPageBody nav ///////////////////////////////////////*/
+  /* https://codepen.io/shooft/pen/dyRVVRr */
+
+  .ContactPageBody{
+    margin-left: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .ContactPageBody main .container h1{
+    visibility: hidden;
+  }
+
+  .ContactPageBody header {
+    margin-left: 45%;
+    margin-right: 50%;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;  
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .ContactPageBody header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Eurostile Extended';
+    font-size: 1.22em;
+    line-height: 2em;
+  }
+  .ContactPageBody header nav ul li a:hover {
+    color: red;
+    -webkit-text-stroke: 0.04em black;
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+  }
+
+  .ContactPageBody header nav img {
+    display: flex;
+    position: sticky;
+    width: 5.9em;
+    margin-top: 0.5em;
+    margin-left: -33%;
+    justify-content: center;
+  }
+  .ContactPageBody header nav img::before {
+    display: inline-flex;
+    background-size: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    transform: scale(.75);
+  }
+
+  .ContactPageBody header nav ul { 
+    margin: 0; 
+    padding: 4em 0 0;
+    background: overlay;
+    background: cover;
+    background-color: red;
+    list-style: none;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom:0;
+    transform: translatey(-100%);
+    transition: .5s;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ContactPageBody header nav.toonMenu ul {
+    transform:translatex(0);
+  }
+  .ContactPageBody header nav ul li {
+    margin:0; 
+    padding:0;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: -1em;
+  }
+  .ContactPageBody header nav ul li a {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+  /* ContactPageBody nav /////////////////////////////////////////////*/
+
+  /* ContactPageBody formulier ///////////////////////////////////////*/
+  /* https://codepen.io/chouaibblgn45/pen/LjYvpP  */
+  *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: black;
+    font-family: "Eurostile Extended";
+  }
+  
+  .container {
+    width: 85vw;
+    height: 70vh;
+    background:#fff;
+    margin: 0.063em auto;
+    border-radius: 0.25em;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  .one {
+    background: #fff;
+    margin-top: -0.5em;
+    padding: 1em;
+    max-width: 100%;
+  }
+  
+  .one .heading {
+    color: black;
+    font-size: 1.25em;
+    margin-top: 2.5em;
+  }
+  
+  .container p {
+    font-size: 0.75em;
+    color: grey;
+    font-weight:lighter;
+  }
+  
+  input[type='text']{
+    width: 85%;
+    height: 3.75;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-bottom: -5em;
+    border:none;
+    border-bottom: 0.188em solid red;
+    position:relative;
+  }
+  
+  input[type='text']:active:focus,
+  input[type='text']:focus{
+    outline : none;
+    font-size: 1em;
+  }
+  
+  input[type='text']:focus::-webkit-input-placeholder,
+  
+  ::placeholder{
+    font-size: 0.9em;;
+    color:#b7b7b7;
+  }
+  
+  .one .btn{
+    width:85%;
+    background: red;
+    padding: 1em;
+    border:none;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .one .btn:hover{
+    cursor:pointer;
+    background: white;
+    border: 0.2em solid red;
+    color: red;
+  }
+
+  /* ContactPageBody nav ///////////////////////////////////////*/
 
   
