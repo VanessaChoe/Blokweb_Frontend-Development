@@ -24,8 +24,9 @@ body{
   .indexBody{
     margin-left: 0;
     padding:0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color: black;
   }
   .indexBody main section:first-of-type h1{
     visibility: hidden;
@@ -38,13 +39,7 @@ body{
   /* https://codepen.io/shooft/pen/dyRVVRr */
 
   .indexBody header {
-    margin-left: 45%;
-    margin-right: 50%;
-    display:grid;
-    grid-template-columns:min-content 1fr min-content;  
-    align-items:center;
-    position:sticky;
-    top:0;
+    position: sticky;
     z-index: 1;
   }
 
@@ -63,48 +58,10 @@ body{
     transition: all 0.3s ease-out;
   }
 
-  .indexBody header > a:first-of-type {
-    display:grid;
-    grid-template-columns:min-content min-content;
-    grid-gap:.25em;
-    align-items:center;
-  }
-
-  .indexBody header > a:last-of-type {
-    width:5em;
-    height:2.5em;
-    border-radius:.25em;
-    line-height:2.5em;
-    text-align:center;
-  }
-
-  .indexBody header > a:last-of-type::before{
-    content:"\2605"; /* sterretje */
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
-    width:1em;
-    height:1em;
-    transform:scale(.75);
-  }
-
   .indexBody header nav img {
     display: flex;
-    position: sticky;
+    margin: auto;
     width: 5.9em;
-    margin-top: 0.5em;
-    margin-left: -33%;
-    justify-content: center;
-  }
-
-  .indexBody header nav img::before {
-    display:inline-flex;
-    background-size: 1em;
-    justify-content:center;
-    align-items:center;
-    width:1em;
-    height:1em;
-    transform:scale(.75);
   }
 
   .indexBody header nav ul { 
@@ -116,7 +73,7 @@ body{
     list-style:none;
     position:fixed;
     left:0; right:0; top:0; bottom:0;
-    transform:translatey(-100%);
+    transform: translatey(-100%);
     transition:.5s;
     z-index: -1;
     height: 100%;
@@ -143,49 +100,43 @@ body{
 
 /* index nav ////////////////////////////////////////////////////////////////*/
 
-.indexBody main section:first-of-type{ 
-  position: fixed;
-  width: 110%;
-  top: -5%;
-  left: -5%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -10;
-  position: fixed;
+.indexBody main section:nth-child(1) video{ /* Achtergrondvideo ////////////*/
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
 }
 
-.indexBody main section:nth-child(1) video{ /* Achtergrondvideo ////////////*/
-  height: 110vh;
-  width: 110vw;
+.indexBody main section:nth-of-type(2){
+  position: relative;
+  width: 100vw;
 }
 
 .indexBody main section:nth-of-type(2) video { /* Video in het midden //////*/
   display: flex;
-  width: 100%;
-  max-width: 80%;
-  transform: translate(12%, 50%);
-  z-index: -1;
+  max-width: 82%;
+  margin: auto;
+  transform: translate(0%, 10%);
 } 
 
 .indexBody main section:nth-child(2) img { /* LILKLEINE LOGO //////////////*/
-  display: flex;
   position: absolute;
   width: 100%;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
 } 
 
   /* indexBody h1 and h2 /////////////////////////////////////////////////*/
 
   .indexBody main article{
-    margin-top: -88.7%;
-    margin-left: 9.5vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    margin-top: -63.75%;
   }
 
   .indexBody main article h2{ /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2  */
-    position: relative;
-    margin-top: 59%;
+    position: absolute;
     color: var(--h2-color);
     font-family: 'Eurostile Extended';
     font-size: 5.4vw;
@@ -229,8 +180,8 @@ body{
   }
     
   .indexBody main h3{ /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2  */
-    position: relative;
-    margin-top: 64%;
+    position: absolute;
+    margin-top: 69%;
     font-family: 'Eurostile Extended';
     font-size: 5.4vw;
 
@@ -281,13 +232,7 @@ body{
   /* https://codepen.io/shooft/pen/dyRVVRr */
 
   .MusicVideoPageBody header {
-    margin-left: 45%;
-    margin-right: 50%;
-    display: grid;
-    grid-template-columns: min-content 1fr min-content;  
-    align-items: center;
     position: sticky;
-    top: 0;
     z-index: 1;
   }
 
@@ -298,6 +243,7 @@ body{
     font-size: 1.22em;
     line-height: 2em;
   }
+  
 
   .MusicVideoPageBody header nav ul li a:hover {
     color: red;
@@ -305,6 +251,7 @@ body{
     transform: scale(1.1);
     transition: all 0.3s ease-out;
   }
+
 
   .MusicVideoPageBody header > a:first-of-type {
     display: grid;
@@ -323,7 +270,7 @@ body{
 
   .MusicVideoPageBody header > a:last-of-type::before{
     display: inline-flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     width: 1em;
     height: 1em;
@@ -332,11 +279,9 @@ body{
 
   .MusicVideoPageBody header nav img {
     display: flex;
-    position: sticky;
+    margin: auto;
     width: 5.9em;
-    margin-top: 0.5em;
-    margin-left: -33%;
-    justify-content: center;
+    position: sticky;
   }
 
   .MusicVideoPageBody header nav img::before {
@@ -403,11 +348,6 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
   }
 
-  .MusicVideoPageBody main section:first-of-type h2{
-    visibility: hidden;
-    display: none;
-  }
-
   .MusicVideoPageBody main section:first-of-type a {
     margin-bottom: 2em;
     margin-right: 1em;
@@ -426,9 +366,15 @@ body{
     transition: all 0.3s ease-out;
   }
 
+  .MusicVideoPageBody main section:first-of-type a img:active {
+    background-color: #333;
+    border-color: #333;
+  }
+  
+
   .MusicVideoPageBody main section:first-of-type a article h2{
     text-transform: uppercase;
-    color: var(--h2-color);
+    color: white;
     font-size: 1em;
     line-height: 26px;
     font-family: 'Eurostile Extended'; 
@@ -446,6 +392,10 @@ body{
     color: var(--p-hover-color);
     transform: scale(1.05);
     transition: all 0.3s ease-out;
+  }
+  .MusicVideoPageBody main section:first-of-type a article p:active {
+    background-color: red;
+    color: #eee;
   }
   
   /* Section 1 Albums ///////////////////////////////////////*/
@@ -490,7 +440,10 @@ body{
     border: solid 0.15em var(--border-color);
     padding: 0.25em;
     height: 12.7em;
-    margin-bottom: -7.3em;
+  }
+
+  .MusicVideoPageBody main section:nth-of-type(2) a:first-of-type article p{
+    margin-top: -7.3em;
   }
 
   .MusicVideoPageBody main section:nth-of-type(2) a:first-of-type article h3{
@@ -518,19 +471,129 @@ body{
     font-family: 'Eurostile Extended';
   }
 
-  @media (min-width: 424px) {
+  .MusicVideoPageBody main section:nth-of-type(2) article p:hover{
+    color: red;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  @media (min-width: 400px) {
     .MusicVideoPageBody main section:nth-of-type(2){
       display: grid;
       text-align: center;
       justify-content: center;
       grid-row-gap: 1.5em;
       grid-column-gap: 7em;
-      grid-template-columns:10em 10em;
       grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
     }
   } 
   
+  
   /* Section 2 Video's ///////////////////////////////////////*/
+
+  .MusicVideoPageBody footer{
+    background-color: red;
+    height: 26em;
+  }
+
+  .MusicVideoPageBody footer section:first-of-type{
+    position: relative;
+    flex-wrap: wrap;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-row-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  } 
+
+  .MusicVideoPageBody footer section article{
+    position: relative;
+    top: 2em;
+  }
+
+  .MusicVideoPageBody footer section article a{
+    text-decoration: none;
+  }
+
+  .MusicVideoPageBody footer section article a:nth-child(2) p{
+    font-size: 1em;
+  }
+
+  .MusicVideoPageBody footer section article a p:hover{
+    color: black;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+  .MusicVideoPageBody footer section article a p:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+  
+  .MusicVideoPageBody footer article:first-of-type a img{
+    width: 50%;
+    height: 49%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .MusicVideoPageBody footer article:first-of-type a img:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody footer article:nth-child(2) a img{
+    width: 50%;
+    height: 49%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .MusicVideoPageBody footer article:nth-child(2) a img:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody footer article:nth-child(3) a img{
+    width: 50%;
+    height: 49%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .MusicVideoPageBody footer article:nth-child(3) a img:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody footer article:nth-child(4) a img{
+    width: 20%;
+    height: 49%;
+    margin-left: 1em;
+    margin-right: 1em;
+  } 
+  .MusicVideoPageBody footer article:nth-child(4) a img:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody footer p{
+    color: white;
+    font-size: 0.7em; 
+  }
+
+  @media (min-width: 320px) {
+    .MusicVideoPageBody footer{
+      color: red;
+      height: 53em;
+    }
+  } 
 
 /* MusicVideoPageBody ////////////////////////////////////////////////*/
 
@@ -550,19 +613,16 @@ body{
   }
 
   .ContactPageBody header {
-    margin-left: 45%;
-    margin-right: 50%;
+    margin: auto;
     display: grid;
-    grid-template-columns: min-content 1fr min-content;  
-    align-items: center;
-    position: sticky;
-    top: 0;
+    position:sticky;
+    top:0;
     z-index: 1;
   }
 
   .ContactPageBody header nav ul li a {
-    color: black;
-    text-decoration: none;
+    color:black;
+    text-decoration:none;
     font-family: 'Eurostile Extended';
     font-size: 1.22em;
     line-height: 2em;
@@ -576,36 +636,21 @@ body{
 
   .ContactPageBody header nav img {
     display: flex;
-    position: sticky;
-    width: 5.9em;
-    margin-top: 0.5em;
-    margin-left: -33%;
-    justify-content: center;
-  }
-  .ContactPageBody header nav img::before {
-    display: inline-flex;
-    background-size: 1em;
-    justify-content: center;
-    align-items: center;
-    width: 1em;
-    height: 1em;
-    transform: scale(.75);
+    margin: auto;
+    width: 5em;
   }
 
   .ContactPageBody header nav ul { 
-    margin: 0; 
-    padding: 4em 0 0;
+    margin:0; 
+    padding:4em 0 0;
     background: overlay;
     background: cover;
     background-color: red;
-    list-style: none;
-    position: fixed;
-    left: 0; 
-    right: 0; 
-    top: 0; 
-    bottom:0;
+    list-style:none;
+    position:fixed;
+    left:0; right:0; top:0; bottom:0;
     transform: translatey(-100%);
-    transition: .5s;
+    transition:.5s;
     z-index: -1;
     height: 100%;
     width: 100%;
@@ -651,6 +696,7 @@ body{
     text-align:center;
     position:relative;
     overflow:hidden;
+    top: 2em;
   }
   
   .one {
@@ -715,5 +761,110 @@ body{
   }
 
   /* ContactPageBody nav ///////////////////////////////////////*/
+
+  .ContactPageBody footer{
+    background-color: red;
+    height: 26em;
+  }
+
+  .ContactPageBody footer section:first-of-type{
+    position: relative;
+    flex-wrap: wrap;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-row-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  } 
+
+  .ContactPageBody footer section article{
+    position: relative;
+    top: 2em;
+  }
+
+  .ContactPageBody footer section article a{
+    text-decoration: none;
+  }
+
+  .ContactPageBody footer section article a:nth-child(2) p{
+    font-size: 1em;
+  }
+
+  .ContactPageBody footer section article a p:hover{
+    color: black;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+  .ContactPageBody footer section article a p:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+  
+  .ContactPageBody footer article:first-of-type a img{
+    width: 50%;
+    height: 49%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .ContactPageBody footer article:first-of-type a img:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .ContactPageBody footer article:nth-child(2) a img{
+    width: 50%;
+    height: 49%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .ContactPageBody footer article:nth-child(2) a img:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .ContactPageBody footer article:nth-child(3) a img{
+    width: 50%;
+    height: 49%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .ContactPageBody footer article:nth-child(3) a img:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .ContactPageBody footer article:nth-child(4) a img{
+    width: 20%;
+    height: 49%;
+    margin-left: 1em;
+    margin-right: 1em;
+  } 
+  .ContactPageBody footer article:nth-child(4) a img:active{
+    background-color:black;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .ContactPageBody footer p{
+    color: white;
+    font-size: 0.7em; 
+  }
+
+  @media (min-width: 320px) {
+    .ContactPageBody footer{
+      color: red;
+      height: 53em;
+    }
+  } 
+
 
   
