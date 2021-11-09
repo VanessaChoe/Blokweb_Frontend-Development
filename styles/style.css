@@ -47,7 +47,7 @@ body{
     color:black;
     text-decoration:none;
     font-family: 'Eurostile Extended';
-    font-size: 1.22em;
+    font-size: 1.5em;
     line-height: 2em;
   }
 
@@ -127,15 +127,14 @@ body{
 
   /* indexBody h1 and h2 /////////////////////////////////////////////////*/
 
-  .indexBody main article{
+  .indexBody main article:first-of-type{
     display: flex;
     position: relative;
     justify-content: center;
-    margin: auto;
     margin-top: -63.75%;
   }
 
-  .indexBody main article h2{ /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2  */
+  .indexBody main article:first-of-type h2{ /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2  */
     position: absolute;
     color: var(--h2-color);
     font-family: 'Eurostile Extended';
@@ -179,7 +178,7 @@ body{
     }
   }
     
-  .indexBody main h3{ /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2  */
+  .indexBody main article:first-of-type h3{ /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2  */
     position: absolute;
     margin-top: 69%;
     font-family: 'Eurostile Extended';
@@ -222,6 +221,7 @@ body{
       color: red;
     }
   }
+
   /* indexBody h2 and h3 ///////////////////////////////////////*/
 
 /* index.html /////////////////////////////////////////////////////////*/
@@ -240,7 +240,7 @@ body{
     color: black;
     text-decoration: none;
     font-family: 'Eurostile Extended';
-    font-size: 1.22em;
+    font-size: 1.5em;
     line-height: 2em;
   }
   
@@ -533,7 +533,7 @@ body{
   
   .MusicVideoPageBody footer article:first-of-type a img{
     width: 50%;
-    height: 49%;
+    height: 33%;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -546,7 +546,7 @@ body{
 
   .MusicVideoPageBody footer article:nth-child(2) a img{
     width: 50%;
-    height: 49%;
+    height: 33%;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -559,7 +559,7 @@ body{
 
   .MusicVideoPageBody footer article:nth-child(3) a img{
     width: 50%;
-    height: 49%;
+    height: 33%;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -572,7 +572,7 @@ body{
 
   .MusicVideoPageBody footer article:nth-child(4) a img{
     width: 20%;
-    height: 49%;
+    height: 33%;
     margin-left: 1em;
     margin-right: 1em;
   } 
@@ -624,7 +624,7 @@ body{
     color:black;
     text-decoration:none;
     font-family: 'Eurostile Extended';
-    font-size: 1.22em;
+    font-size: 1.5em;
     line-height: 2em;
   }
   .ContactPageBody header nav ul li a:hover {
