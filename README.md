@@ -178,13 +178,13 @@ Ging slecht:
 
 ### Screenshot(s)
 
-<img src="images/Schermafbeelding2021-10-07om02.32.41" width="375px" alt="Homepage">
+<img src="images/Schermafbeelding2021-10-07om02.32.41.jpg" width="375px" alt="Homepage">
 
-<img src="images/Schermafbeelding2021-10-07om02.32.51" width="375px" alt="Nav Hamburgermenu">
+<img src="images/Schermafbeelding2021-10-07om02.32.51.jpg" width="375px" alt="Nav Hamburgermenu">
 
 <img src="images/127.0.0.1_5500_Music&Videos.html(iPhone X).png" width="375px" alt="MUSIC&VIDEOS">
 
-<img src="images/Schermafbeelding2021-10-07om02.33.01" width="375px" alt="Formulier">
+<img src="images/Schermafbeelding2021-10-07om02.33.01.jpg" width="375px" alt="Formulier">
 
 </details>
 
