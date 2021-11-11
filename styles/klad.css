@@ -1,0 +1,388 @@
+/* MusicVideoPageBody ////////////////////////////////////////////////*/
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  :root {
+    --background-color:#000000;
+    --h1-color: #FFFFFF;
+    --h2-color:#FFFFFF;
+    --border-color: #FF0000;
+    --p-hover-color: #FFFFFF;
+    --p-color: #FF0000;
+    --footer-color: #FF0000;
+    --red-color:#FF0000;
+    --white-color:#FFFFFF;
+    --black-color:#000000;
+  }
+  
+  body{
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    background-size: 100vh;
+    width: 100%;
+  }
+  
+  /* MusicVideoPageBody nav ///////////////////////////////////////*/
+  /* https://codepen.io/shooft/pen/dyRVVRr */
+
+  .MusicVideoPageBody header {
+    position: sticky;
+    z-index: 1;
+  }
+
+  .MusicVideoPageBody header nav.toonMenu{
+    display: visible;
+  }
+
+  .MusicVideoPageBody header nav ul li a {
+    color:black;
+    text-decoration:none;
+    font-family: 'Eurostile Extended';
+    font-size: 1.5em;
+    line-height: 2em;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .MusicVideoPageBody header nav ul li a:hover {
+    color: var(--p-color);
+    -webkit-text-stroke: 0.04em black;
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+  }
+  .MusicVideoPageBody header nav ul li a:focus {
+    background-color: var(--white-color);
+    color: var(--red-color);
+    border-color: var(--white-color);
+  }
+
+  .MusicVideoPageBody header nav img {
+    display: flex;
+    margin: auto;
+    width: 5.9em;
+  }
+  .MusicVideoPageBody header nav img:focus {
+    background-color: var(--black-color);
+  }
+  .MusicVideoPageBody header nav img:active {
+    background-color: var(--red-color);
+  }
+
+  .MusicVideoPageBody header nav img {
+    display: flex;
+    margin: auto;
+    width: 5.9em;
+  }
+
+  .MusicVideoPageBody header nav ul { 
+    margin:0; 
+    padding:4em 0 0;
+    background: overlay;
+    background: cover;
+    background-color: var(--red-color);
+    list-style:none;
+    position:fixed;
+    left:0; right:0; top:0; bottom:0;
+    transform: translatey(-100%);
+    transition:.5s;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .MusicVideoPageBody header nav.toonMenu ul {
+    transform:translatex(0);
+  }
+
+  .MusicVideoPageBody header nav ul li {
+    margin:0; 
+    padding:0;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  /* MusicVideoPageBody nav ///////////////////////////////////////*/
+
+  /* Section 1 Albums ///////////////////////////////////////*/
+
+  .MusicVideoPageBody main h1{
+    display: flex;
+    color: var(--h1-color);
+    font-family: 'Eurostile Extended'; 
+    justify-content: center;
+  }
+
+  .MusicVideoPageBody main section{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-row-gap: 1.5em;
+    grid-template-columns: 10em 10em;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  }
+
+  .MusicVideoPageBody main section:first-of-type h2:first-of-type{
+    display: none;
+    visibility: hidden;
+  }
+
+  .MusicVideoPageBody main section:first-of-type a {
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
+    text-decoration: none;
+  } 
+  .MusicVideoPageBody main section:first-of-type a img{
+    width: 16em;
+    border: solid 0.15em var(--border-color);
+    max-width: 100%;
+  }
+  .MusicVideoPageBody main section:first-of-type a img:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody main section:first-of-type a img:active {
+    background-color: #333;
+    border-color: #333;
+  }
+
+  .MusicVideoPageBody main section:first-of-type a article h2{
+    text-transform: uppercase;
+    color: var(--h2-color);
+    font-size: 1em;
+    line-height: 26px;
+    font-family: 'Eurostile Extended'; 
+    pointer-events: none;
+  }
+
+  .MusicVideoPageBody main section:first-of-type a article p{
+    color: var(--p-color);
+    display: block;
+    font-family: 'Eurostile Extended';
+    font-size: 0.875em;
+    text-decoration: underline;
+  }
+  .MusicVideoPageBody main section:first-of-type a article p:hover{
+    color: var(--p-hover-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+  .MusicVideoPageBody main section:first-of-type a article p:active {
+    background-color: var(--red-color);
+    color: var(--white-color);
+  }
+  
+  /* Section 1 Albums ///////////////////////////////////////*/
+
+  /* Section 2 Video's ///////////////////////////////////////*/
+
+  .MusicVideoPageBody h3{
+    display: flex;
+    color: var(--h2-color);
+    font-family: 'Eurostile Extended';
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+
+  .MusicVideoPageBody main article{
+    position: relative;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns:16em;
+    grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  }
+
+  .MusicVideoPageBody main article section{
+      display: flex;
+      position: relative;
+      margin: auto;
+      justify-content: center;
+      bottom: 3em;
+  }
+
+  .MusicVideoPageBody main article video:first-of-type{
+    width: 18em;
+    border: solid 0.15em var(--border-color);
+    padding: 0.25em;
+    height: 12.7em;
+    justify-content: center;
+  }
+  .MusicVideoPageBody main article video:nth-child(2){
+    width: 18em;
+    border: solid 0.15em var(--border-color);
+    padding: 0.25em;
+    height: 12.7em;
+    justify-content: center;
+  }
+  .MusicVideoPageBody main article video:hover{
+    opacity: 0.6;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody main article section:first-of-type a{
+      position: absolute;
+      color: black;
+      top: 11em;
+  }
+  .MusicVideoPageBody main article section a:hover{
+    opacity: 0.6;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color: white
+}
+
+  .MusicVideoPageBody main article section:nth-child(2) a{
+    position: absolute;
+    color: black;
+    top: 13.5em;
+    text-decoration: none;
+}
+
+  @media (min-width: 400px) {
+    .MusicVideoPageBody main article{
+      display: grid;
+      text-align: center;
+      justify-content: center;
+      grid-row-gap: 3em;
+      grid-column-gap: 7em;
+      grid-template-columns: repeat(auto-fit, minmax(20.5em, 1fr)); 
+    }
+  } 
+  
+  /* Section 2 Video's ///////////////////////////////////////*/
+
+  .MusicVideoPageBody footer{
+    background-color: var(--red-color);
+    height: 26em;
+  }
+
+  .MusicVideoPageBody footer article h2{
+    display: flex;
+    justify-content: center;
+    color: var(--h2-color);
+  }
+  
+
+  .MusicVideoPageBody footer section:first-of-type{
+    position: relative;
+    flex-wrap: wrap;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-row-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  } 
+
+  .MusicVideoPageBody footer section:first-of-type h2{
+    display: none;
+    visibility: hidden;
+  }
+  .MusicVideoPageBody footer section:first-of-type article h3{
+    display: none;
+    visibility: hidden;
+  }
+
+  .MusicVideoPageBody footer section article{
+    position: relative;
+    top: 2em;
+  }
+
+  .MusicVideoPageBody footer section article a{
+    text-decoration: none;
+  }
+
+  .MusicVideoPageBody footer section article a:nth-child(2) p{
+    font-size: 1em;
+  }
+
+  .MusicVideoPageBody footer section article a p:hover{
+    color: var(--background-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+  .MusicVideoPageBody footer section article a p:active{
+    background-color: var(--background-color);
+    color: var(--white-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+  .MusicVideoPageBody footer section:first-of-type article:first-of-type p:focus-visible{
+    background-color: white;
+  }
+  
+  .MusicVideoPageBody footer article:first-of-type a img{
+    width: 50%;
+    height: 33%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .MusicVideoPageBody footer article:first-of-type a img:active{
+    background-color: var(--background-color);
+    color: var(--white-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody footer article:nth-child(2) a img{
+    width: 50%;
+    height: 33%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .MusicVideoPageBody footer article:nth-child(2) a img:active{
+    background-color: var(--background-color);
+    color: var(--white-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody footer article:nth-child(3) a img{
+    width: 50%;
+    height: 33%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .MusicVideoPageBody footer article:nth-child(3) a img:active{
+    background-color: var(--background-color);
+    color: var(--white-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody footer article:nth-child(4) a img{
+    width: 20%;
+    height: 33%;
+    margin-left: 1em;
+    margin-right: 1em;
+  } 
+  .MusicVideoPageBody footer article:nth-child(4) a img:active{
+    background-color: var(--background-color);
+    color: var(--white-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+
+  .MusicVideoPageBody footer p{
+    color: var(--white-color);
+    font-size: 0.7em; 
+  }
+
+  @media (min-width: 320px) {
+    .MusicVideoPageBody footer{
+      color: var(--red-color);
+      height: 53em;
+    }
+  } 
